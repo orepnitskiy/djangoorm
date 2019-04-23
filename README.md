@@ -1,39 +1,39 @@
 # DjangoORM practice
 
-1. Создание (функция create):
-Создать пользователя first_name = u1, last_name = u1.
-Создать пользователя first_name = u2, last_name = u2.
-Создать пользователя first_name = u3, last_name = u3.
-Создать блог title = blog1, author = u1.
-Создать блог title = blog2, author = u1.
-Подписать пользователей u1 u2 на blog1, u2 на blog2.
-Создать топик title = topic1, blog = blog1, author = u1.
-Создать топик title = topic2_content, blog = blog1, author = u3, created = 2017-01-01.
-Лайкнуть topic1 пользователями u1, u2, u3.
-2. Редактирование:
+1. Creating (create function):
+Create user first_name = u1, last_name = u1.
+Create user first_name = u2, last_name = u2.
+Create user first_name = u3, last_name = u3.
+Create blog title = blog1, author = u1.
+Create blog title = blog2, author = u1.
+Subscribe users u1,u2 on blog1, u2 on blog2.
+Create topic title = topic1, blog = blog1, author = u1.
+Create topic title = topic2_content, blog = blog1, author = u3, created = 2017-01-01.
+Like topic1 by users u1, u2, u3.
+2. Editing:
 
-Поменять first_name на uu1 у всех пользователей (функция edit_all).
-Поменять first_name на uu1 у пользователей, у которых first_name u1 или u2 (функция edit_u1_u2).
-3. Удаление:
+Change first_name of all users to uu1 (edit_all function).
+Change first_name to uu1 for users, that have first_name u1 or u2 (edit_u1_u2 function).
+3. Deleting:
 
-удалить пользователя с first_name u1 (функция delete_u1).
-отписать пользователя с first_name u2 от блогов (функция unsubscribe_u2_from_blogs).
-4. Найти топики у которых дата создания больше 2018-01-01 (функция get_topic_created_grated).
+ Delete users with first_name u1 (delete_u1 function).
+ Unsubscribe users with first_name u2 from blogs (unsubscribe_u2_from_blogs function).
+4. Find topics that have creating date later than 2018-01-01 (get_topic_created_grated function).
 
-5. Найти топик у которого title заканчивается на content (функция get_topic_title_ended).
+5. Найти топик у которого title заканчивается на content (get_topic_title_ended function).
 
-6. Получить 2х первых пользователей (сортировка в обратном порядке по id) (функция get_user_with_limit).
+6. Get two first users (reverse sort by id function) (get_user_with_limit function function).
 
-7. Получить количество топиков в каждом блоге, назвать поле topic_count, отсортировать по topic_count по возрастанию (функция get_topic_count).
+7. Get quantity of topics in every blog, name field as topic_count, sort by topic_count (get_topic_count function).
 
-8. Получить среднее количество топиков в блоге (функция get_avg_topic_count).
+8. Get average quantity of the blogs (get_avg_topic_count function).
 
-9. Найти блоги, в которых топиков больше одного (функция get_blog_that_have_more_than_one_topic).
+9. Find blogs that have more than one topic (get_blog_that_have_more_than_one_topic function).
 
-10. Получить все топики автора с first_name u1 (функция get_topic_by_u1).
+10. Get all topics by author that have first_name u1 (get_topic_by_u1 function).
 
-11. Найти пользователей, у которых нет блогов, отсортировать по возрастанию id (функция get_user_that_dont_have_blog).
+11. Find users, that don't have blogs, sort by id (get_user_that_dont_have_blog function).
 
-12. Найти топик, который лайкнули все пользователи (функция get_topic_that_like_all_users).
+12. Find topic, that was liked by all users (get_topic_that_like_all_users function).
 
-13. Найти топики, у которы нет лайков (функция get_topic_that_dont_have_like).
+13. Find topics, that have no likes (get_topic_that_dont_have_like function).
